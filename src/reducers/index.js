@@ -12,9 +12,10 @@ const reducer = (state=initialState, action) => {
                 loading: false
             };
 
-        case 'BOOKS_ON':
+        case 'BOOKS_REQUESTED':
             return {
-                books:action.payload
+                books:[],
+                loading: true
             };
 
         default:
