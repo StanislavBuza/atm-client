@@ -1,7 +1,7 @@
 import React from "react";
 import "./shopping-cart-table.css"
 
-const ShoppingCartTable = () => {
+const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete}) => {
     return (
         <div className="shopping-cart-table">
             <h2>Your Order</h2>
@@ -11,7 +11,7 @@ const ShoppingCartTable = () => {
                     <th>#</th>
                     <th>Items</th>
                     <th>Count</th>
-                    <th>Price</th>
+                    <th>Total</th>
                     <th>Action</th>
                 </tr>
                 </thead>
