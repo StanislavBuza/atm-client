@@ -4,11 +4,11 @@ import {connect} from "react-redux";
 
 const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete}) => {
     const renderRow = (el, idx) => {
-        const {id, name, count, total} = el;
+        const {id, title, count, total} = el;
         return (
             <tr key={id}>
                 <td>{idx + 1}</td>
-                <td>{name}</td>
+                <td>{title}</td>
                 <td>{count}</td>
                 <td>${total}</td>
                 <td>

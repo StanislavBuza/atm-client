@@ -11,6 +11,13 @@ const booksRequested = () => {
     }
 };
 
+const bookAddedToCart = (bookId) => {
+    return {
+        type: 'BOOK_ADDED_TO_CART',
+        payload: bookId
+    }
+};
+
 const booksError = (error) => {
     return {
         type: 'FETCH_BOOKS_FAILURE',
@@ -21,5 +28,6 @@ const booksError = (error) => {
 export {
     booksLoaded,
     booksRequested,
-    booksError
+    booksError,
+    bookAddedToCart
 };
