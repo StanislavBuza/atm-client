@@ -18,6 +18,20 @@ const bookAddedToCart = (bookId) => {
     }
 };
 
+const allBooksDeleteFromCart = (bookId) => {
+    return {
+        type: 'ALL_BOOKS_DELETE_FROM_CART',
+        payload: bookId
+    }
+};
+
+const bookDeleteFromCart = (bookId) => {
+    return {
+        type: 'BOOK_DELETE_FROM_CART',
+        payload: bookId
+    }
+};
+
 const booksError = (error) => {
     return {
         type: 'FETCH_BOOKS_FAILURE',
@@ -29,5 +43,7 @@ export {
     booksLoaded,
     booksRequested,
     booksError,
-    bookAddedToCart
+    bookAddedToCart,
+    bookDeleteFromCart,
+    allBooksDeleteFromCart
 };
