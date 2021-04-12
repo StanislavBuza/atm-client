@@ -1,7 +1,9 @@
-import CartPage from "./cart-page";
+import UserPage from "./user-page";
 import HomePage from "./home-page";
+import AdminPage from "./admin-page";
 
 export {
-    CartPage,
-    HomePage
+    UserPage,
+    HomePage,
+    AdminPage
 }
